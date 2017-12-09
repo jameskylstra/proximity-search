@@ -4,18 +4,13 @@
 #include <vector>
 #include <cassert>
 #include "trie.h"
-#include "flags.h"
 using namespace std;
-
-const string flag_ids[] = {"-case"};
 
 int main(int argc, char* argv[]) {
     //takes a list of files as arguments
     //then, from the command line, it takes proximity search requests
     //prints out true or false
     assert(argc > 1);
-    flags.add(flag_ids, 1);
-    if(flags["-case"].isOn()) {
     vector<Trie*> files;
     Trie* trie_ptr;
     for (int i = 1; i < argc; i++) {
