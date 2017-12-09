@@ -4,7 +4,7 @@
 #include <vector>
 #include <cassert>
 #include "trie.h"
-#include "../args/flags.h"
+#include "flags.h"
 using namespace std;
 
 const string flag_ids[] = {"-case"};
